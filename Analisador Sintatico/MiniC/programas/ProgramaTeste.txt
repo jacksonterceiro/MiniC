@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    
+    int a = 20;
+
+    
+    char a = 'A';
+    
+    char b = '\n';
+    
+    
+    return 1;
+}
+
