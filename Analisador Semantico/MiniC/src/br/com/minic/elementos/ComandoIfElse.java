@@ -41,7 +41,7 @@ public class ComandoIfElse implements IComando {
 		StringBuilder comandoifelse = new StringBuilder();
 		
 		comandoifelse.append("if (" + this.getExpRelacional() + ") \n");
-		comandoifelse.append("  " + this.getCodIF() + ";\n");	
+		comandoifelse.append("  " + this.getCodIF());	
 		comandoifelse.append("else \n" );
 		comandoifelse.append("  " +  this.getCodElse().toString() );
 		

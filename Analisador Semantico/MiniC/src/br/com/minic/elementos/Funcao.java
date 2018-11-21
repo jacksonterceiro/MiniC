@@ -43,7 +43,19 @@ public class Funcao implements IExpressao{
     @Override
     public String toString() {
         StringBuilder Funcao = new StringBuilder();
-        String retorno = this.id + "(" + this.ParametrosOptions + ")";
+        //String retorno = this.id + "(" + this.ParametrosOptions + ")";
+        
+        
+        String retorno = this.id + "(";
+        for(IExpressao elemento: this.ParametrosOptions) {
+        	retorno += elemento + ", ";
+
+        }
+        
+        retorno += "///";
+        retorno = retorno.replace(", ///",  ")");
+        
+        
         Funcao.append(retorno);
         return Funcao.toString();
     }

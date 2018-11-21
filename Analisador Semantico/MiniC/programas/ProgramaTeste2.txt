@@ -20,11 +20,14 @@ int main() {
 int fatorial(int n) {
     
   int res;
+  int tes;
 
-  if (n < 1)
+  if (n < 1){
     res = 1;
+    tes = res;
+    }
   else
-    res = n * fatorial(n - 1);
+    res = n * fatorial(n - 1, x, y);
 
   return res;
 

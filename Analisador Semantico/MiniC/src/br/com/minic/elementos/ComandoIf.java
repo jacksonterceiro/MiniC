@@ -38,7 +38,7 @@ public class ComandoIf implements IComando {
 		StringBuilder comandoif = new StringBuilder();
 		
 		comandoif.append("if (" + this.getExpRelacional() + ") \n");
-		comandoif.append("  " + this.getCodIF() + ";");
+		comandoif.append("  " + this.getCodIF());
 		
 	    return comandoif.toString();
 	}

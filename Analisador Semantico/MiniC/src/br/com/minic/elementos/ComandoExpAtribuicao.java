@@ -32,6 +32,7 @@ public class ComandoExpAtribuicao implements IComando {
 		StringBuilder toString = new StringBuilder();
 		
 		toString.append(this.getIdentificador());
+		toString.append(" = ");
 		toString.append(this.getExpAtr());
 		toString.append(";");
 		

@@ -20,7 +20,7 @@ public class ComandoPrintf implements IComando {
 
 	public String toString() {
 		StringBuilder toString = new StringBuilder();
-		toString.append("Printf(" + this.getExp() + ");");
+		toString.append("printf(" + this.getExp() + ");");
 	    return toString.toString();		
 	}
 
